@@ -1,8 +1,5 @@
 package view;
 
-import java.util.List;
-import java.util.Scanner;
-
 import controller.AutenticacaoController;
 import model.usuario.Usuario;
 import util.InputHelper;

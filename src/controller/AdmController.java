@@ -24,23 +24,23 @@ public class AdmController {
 
     public void cadastrarGerente(String nome, String cpf, String email, String senha) {
         Gerente g = new Gerente(nome, cpf, email, senha);
-        usuarios.add(g);  // Adiciona na lista de usuários (a que será salva)
-        gerentes.add(g);  // Atualiza também a lista de gerentes em tempo de execução
+        usuarios.add(g);
+        gerentes.add(g);
         Persistencia.salvarUsuarios(usuarios);  // Salva no JSON
         System.out.println("Gerente salvo com sucesso.");
     }
 
     public void cadastrarCliente(String nome, String cpf, String email, String senha) {
-        Conta conta = new Conta(cpf); // Cria a conta vinculada ao CPF do cliente
+        Conta conta = new Conta(cpf);
         Cliente cliente = new Cliente(nome, cpf, email, senha, conta); // Instancia o cliente com a conta
 
-        usuarios.add(cliente);   // Adiciona na lista geral de usuários
-        clientes.add(cliente);   // Adiciona na lista específica de clientes
+        usuarios.add(cliente);
+        clientes.add(cliente);
 
-        contas.add(conta);       // Adiciona a conta na lista de contas
+        contas.add(conta);
 
-        Persistencia.salvarUsuarios(usuarios); // Salva os usuários atualizados
-        Persistencia.salvarContas(clientes);     // Salva as contas atualizadas
+        Persistencia.salvarUsuarios(usuarios);
+        Persistencia.salvarContas(clientes);
 
         System.out.println("Cliente cadastrado com sucesso.");
     }
