@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import model.Conta;
+import model.Transacao;
 import model.usuario.Usuario;
 import model.usuario.Cliente;
 import model.usuario.Gerente;
@@ -25,6 +26,8 @@ public class SistemaController {
         Scanner sc = new Scanner(System.in);
         Usuario usuarioLogado;
         AutenticacaoController auth = new AutenticacaoController(usuarios);
+        int maiorId = Persistencia.obterMaiorIdTransacao(clientes);
+        Transacao.setContador(maiorId + 1);
 
         do {
             usuarioLogado = null;
@@ -48,7 +51,6 @@ public class SistemaController {
             System.out.println("\nDeseja fazer login com outro usuário? (s/n)");
         } while (sc.nextLine().trim().equalsIgnoreCase("s"));
 
-        System.out.println("=== Sistema Finalizado ===");
     }
 
 

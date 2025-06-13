@@ -25,7 +25,7 @@ public class ClienteController {
             }
         }
         cliente.sacar(valor);
-        Log.registrar(cliente.getNome() + " sacou R$" + String.format("%.2f, valor"));
+        Log.registrar(cliente.getNome() + " sacou R$" + String.format("%.2f", valor));
         return true;
     }
 

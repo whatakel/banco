@@ -12,3 +12,23 @@
 [13/06/2025 14:27:38]tomate depositou R$50,00
 [13/06/2025 14:31:35]tomate depositou R$100,00
 [13/06/2025 14:36:27]tomate depositou R$100,00
+[13/06/2025 15:18:05]ze sacou R$123,00
+[13/06/2025 15:26:08]ze depositou R$1000,00
+[13/06/2025 15:26:13]ze sacou R$500,00
+[13/06/2025 15:27:45]ze depositou R$150,00
+[13/06/2025 15:31:53]ze depositou R$1000,00
+[13/06/2025 15:32:08]ze sacou R$500,00
+[13/06/2025 15:35:14]Gerente reverteu saque ID 8 do cliente ze
+[13/06/2025 15:38:05]ze depositou R$1000,00
+[13/06/2025 15:38:36]ze depositou R$100,00
+[13/06/2025 15:40:12]ze depositou R$10000,00
+[13/06/2025 15:40:22]ze sacou R$5000,00
+[13/06/2025 15:40:42]ze depositou R$50,00
+[13/06/2025 15:40:58]ze depositou R$500,00
+[13/06/2025 15:41:33]tomate depositou R$10000,00
+[13/06/2025 15:41:47]tomate sacou R$2000,00
+[13/06/2025 15:47:53]Gerente reverteu depósito ID 4 do cliente ze
+[13/06/2025 15:49:12]ze depositou R$1000,00
+[13/06/2025 15:49:15]ze sacou R$300,00
+[13/06/2025 15:49:46]Gerente reverteu saque ID 2 do cliente ze
+[13/06/2025 15:56:25]Gerente reverteu saque ID 2 do cliente ze

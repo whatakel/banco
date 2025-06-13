@@ -42,26 +42,34 @@ public class GerenteView {
                     controller.cadastrarCliente(nome, cpf, email, senha);
                     System.out.println("Cliente cadastrado com sucesso.");
                     break;
-    
+
                 case 3:
                     String cpfCliente = InputHelper.lerString("CPF do cliente: ");
-                    int id = InputHelper.lerInt("ID da transação a reverter: ");
-                    Cliente alvo = controller.listarClientes().stream()
-                            .filter(c -> c.getCpf().equals(cpfCliente))
-                            .findFirst().orElse(null);
-    
-                    if (alvo == null) {
-                        System.out.println("Cliente não encontrado.");
-                    } else {
-                        boolean ok = controller.reverterTransacao(alvo, id);
-                        if (ok) {
-                            System.out.println("Transação revertida com sucesso.");
-                        } else {
-                            System.out.println("Não foi possível reverter a transação.");
+                    Cliente clienteAlvo = null;
+
+                    for (Cliente c : controller.listarClientes()) {
+                        if (c.getCpf().equalsIgnoreCase(cpfCliente.trim())) {
+                            clienteAlvo = c;
+                            break;
                         }
                     }
+
+                    if (clienteAlvo == null) {
+                        System.out.println("Cliente não encontrado.");
+                        break;
+                    }
+
+                    int idTransacao = InputHelper.lerInt("ID da transação a reverter: ");
+                    boolean sucesso = controller.reverterTransacao(clienteAlvo, idTransacao);
+
+                    if (sucesso) {
+                        System.out.println("Transação revertida com sucesso.");
+                    } else {
+                        System.out.println("Não foi possível reverter a transação.");
+                    }
                     break;
-    
+
+
                 case 0:
                     System.out.println("Saindo...");
                     break;
@@ -75,32 +83,3 @@ public class GerenteView {
     }
 }    
 
-// @Override
-// public void exibirMenu(){
-// Scanner sc = new Scanner(System.in);
-// int opcao;
-
-// do{
-// System.out.println("\n--- MENU GERENTE ---");
-// System.out.println("1. Listar clientes");
-// System.out.println("2. Reverter transacao");
-// System.out.println("3. Cadastrar novo cliente");;
-// System.out.println("0. Sair");
-// System.out.println("Opção: ");
-// opcao = sc.nextInt();
-
-// switch(opcao){
-// case 1:
-// // chamda à controller/listagem
-// break;
-
-// case 2:
-// // lógica de reversão (a implementar)
-// break;
-
-// case 3:
-// // chamada à controller para cadastro
-// break;
-// }
-// } while (opcao != 0);
-// }
