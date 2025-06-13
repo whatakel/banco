@@ -74,8 +74,22 @@ public class AdmController {
 
 
     public boolean excluirClientePorCPF(String cpf) {
-        return clientes.removeIf(c -> c.getCpf().equals(cpf));
+        boolean removidoCliente = clientes.removeIf(c -> c.getCpf().equals(cpf));
+        boolean removidoUsuario = usuarios.removeIf(u -> u instanceof Cliente && u.getCpf().equals(cpf));
+        boolean removidoConta = contas.removeIf(ct -> ct.getCpfDono().equals(cpf));
+
+        if (removidoCliente || removidoUsuario || removidoConta) {
+            Persistencia.salvarUsuarios(usuarios);
+            Persistencia.salvarContas(clientes);  // salvar apenas contas de clientes ativos
+            Persistencia.salvarTransacoes(clientes);  // caso queira remover transações também
+            System.out.println("Cliente excluído com sucesso.");
+            return true;
+        } else {
+            System.out.println("Nenhum cliente encontrado com esse CPF.");
+            return false;
+        }
     }
+
 
     public List<Cliente> listarClientes() {
         return clientes;

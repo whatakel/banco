@@ -1,25 +1,74 @@
 [
   {
-    "cpfDono": "ze",
-    "saldo": 9500.0,
+    "cpfDono": "tomate",
+    "saldo": 140.0,
     "transacoes": [
       {
         "id": 1,
-        "dataHora": "2025-06-13T02:20:10.1286215",
-        "valor": 10000.0,
+        "dataHora": "2025-06-13T14:19:35.45077",
+        "valor": 1000.0,
         "tipo": "deposito"
       },
       {
         "id": 2,
-        "dataHora": "2025-06-13T02:20:15.792657",
+        "dataHora": "2025-06-13T14:19:41.6023589",
         "valor": 500.0,
+        "tipo": "saque"
+      },
+      {
+        "id": 2,
+        "dataHora": "2025-06-13T14:27:17.7783125",
+        "valor": 200.0,
+        "tipo": "saque"
+      },
+      {
+        "id": 3,
+        "dataHora": "2025-06-13T14:27:38.2422968",
+        "valor": 50.0,
+        "tipo": "deposito"
+      },
+      {
+        "id": 4,
+        "dataHora": "2025-06-13T14:28:22.786572",
+        "valor": 10.0,
+        "tipo": "saque"
+      },
+      {
+        "id": 5,
+        "dataHora": "2025-06-13T14:28:50.0098041",
+        "valor": 100.0,
+        "tipo": "saque"
+      },
+      {
+        "id": 6,
+        "dataHora": "2025-06-13T14:29:01.250161",
+        "valor": 100.0,
         "tipo": "saque"
       }
     ]
   },
   {
-    "cpfDono": "dale",
-    "saldo": 0.0,
-    "transacoes": []
+    "cpfDono": "ze",
+    "saldo": 1800.0,
+    "transacoes": [
+      {
+        "id": 3,
+        "dataHora": "2025-06-13T14:21:11.1470059",
+        "valor": 3000.0,
+        "tipo": "deposito"
+      },
+      {
+        "id": 4,
+        "dataHora": "2025-06-13T14:21:16.522567",
+        "valor": 1500.0,
+        "tipo": "saque"
+      },
+      {
+        "id": 1,
+        "dataHora": "2025-06-13T14:26:45.1793907",
+        "valor": 300.0,
+        "tipo": "deposito"
+      }
+    ]
   }
 ]

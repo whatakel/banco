@@ -4,3 +4,11 @@
 [13/06/2025 02:03:39]Gerente cadastrou novo cliente: bbb(bbb)
 [13/06/2025 02:20:10]ze depositou R$10000,00
 [13/06/2025 02:48:05]dale depositou R$12030129,00
+[13/06/2025 14:11:56]ze depositou R$123,00
+[13/06/2025 14:13:24]Gerente reverteu depósito ID 1 do cliente ze
+[13/06/2025 14:19:35]tomate depositou R$1000,00
+[13/06/2025 14:21:11]ze depositou R$3000,00
+[13/06/2025 14:26:45]ze depositou R$300,00
+[13/06/2025 14:27:38]tomate depositou R$50,00
+[13/06/2025 14:31:35]tomate depositou R$100,00
+[13/06/2025 14:36:27]tomate depositou R$100,00

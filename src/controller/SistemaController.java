@@ -20,30 +20,37 @@ public class SistemaController {
     private List<Gerente> gerentes;
     private List<Conta> contas;
 
-    public void iniciar(){
+    public void iniciar() {
         carregarDados();
-
         Scanner sc = new Scanner(System.in);
-        Usuario usuarioLogado = null;
+        Usuario usuarioLogado;
         AutenticacaoController auth = new AutenticacaoController(usuarios);
 
-        while (usuarioLogado == null){
-            usuarioLogado = LoginView.autenticar(auth);
-        }
+        do {
+            usuarioLogado = null;
+            while (usuarioLogado == null) {
+                usuarioLogado = LoginView.autenticar(auth);
+            }
 
-        if (usuarioLogado instanceof Adm){
-            AdmController admController = new AdmController(usuarios, gerentes, clientes, contas);
-            AdmView.exibirMenu((Adm) usuarioLogado, admController);
-        } else if (usuarioLogado instanceof Gerente) {
-            GerenteController gerenteController = new GerenteController(usuarios, clientes);
-            GerenteView.exibirMenu((Gerente) usuarioLogado, gerenteController);
-        } else if (usuarioLogado instanceof Cliente){
-            ClienteController clienteController = new ClienteController((Cliente) usuarioLogado);
-            ClienteView.exibirMenu((Cliente) usuarioLogado, clienteController);
-        }
+            if (usuarioLogado instanceof Adm) {
+                AdmController admController = new AdmController(usuarios, gerentes, clientes, contas);
+                AdmView.exibirMenu((Adm) usuarioLogado, admController);
+            } else if (usuarioLogado instanceof Gerente) {
+                GerenteController gerenteController = new GerenteController(usuarios, clientes);
+                GerenteView.exibirMenu((Gerente) usuarioLogado, gerenteController);
+            } else if (usuarioLogado instanceof Cliente) {
+                ClienteController clienteController = new ClienteController((Cliente) usuarioLogado);
+                ClienteView.exibirMenu((Cliente) usuarioLogado, clienteController);
+            }
 
-        salvarDados();
+            salvarDados();
+
+            System.out.println("\nDeseja fazer login com outro usuário? (s/n)");
+        } while (sc.nextLine().trim().equalsIgnoreCase("s"));
+
+        System.out.println("=== Sistema Finalizado ===");
     }
+
 
     private void carregarDados(){
         usuarios = Persistencia.carregarUsuarios();

@@ -17,7 +17,7 @@ public class GerenteView {
             System.out.println("1. Listar clientes");
             System.out.println("2. Cadastrar novo cliente");
             System.out.println("3. Reverter transação de cliente");
-            System.out.println("0. Sair");
+            System.out.println("0. Logout");
             opcao = InputHelper.lerInt("Escolha: ");
     
             switch (opcao) {

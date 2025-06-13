@@ -18,7 +18,7 @@ public class ClienteView {
             System.out.println("2. Sacar");
             System.out.println("3. Depositar");
             System.out.println("4. Ver histórico");
-            System.out.println("0. Sair");
+            System.out.println("0. Logout");
             opcao = InputHelper.lerInt("Opção: ");
 
             switch (opcao){
@@ -78,52 +78,3 @@ public class ClienteView {
         } while (opcao != 0);
     }
 }
-// @Override
-// public void exibirMenu(){
-// Scanner sc = new Scanner(System.in);
-// int opcao;
-
-// do{
-// System.out.println("\n--- Menu Cliente ---") ;
-// System.out.println("1. Ver saldo");
-// System.out.println("2. Sacar");
-// System.out.println("3. Depositar");
-// System.out.println("4. Ver histórico");
-// System.out.println("0. Sair");
-// opcao = sc.nextInt();
-
-// switch(opcao){
-// case 1:
-// System.out.println("Saldo: R$ " + conta.getSaldo());
-// break;
-// case 2:
-// System.out.print("Valor para Saque: ");
-// double saque = sc.nextDouble();
-// try{
-// if(saque > 1000){
-// sc.nextLine();
-// System.out.print("confirme a senha: ");
-// String senha = sc.nextLine();
-// if(!this.senha.equals(senha)){
-// System.out.println("Senha incorreta.");
-// break;
-// }
-// }
-// sacar(saque);
-// Log.registrar(nome + " sacou R$" + saque);
-// }catch (Exception e){
-// System.out.println(e.getMessage());
-// }
-// break;
-// case 3:
-// System.out.print("Valor para depósito: ");
-// double deposito = sc.nextDouble();
-// depositar(deposito);
-// Log.registrar(nome + " depositou R$" + deposito);
-// break;
-// case 4:
-// conta.listarTransacoes();
-// break;
-// }
-// } while (opcao != 0);
-// }
