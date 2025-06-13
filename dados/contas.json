@@ -1,0 +1,25 @@
+[
+  {
+    "cpfDono": "ze",
+    "saldo": 9500.0,
+    "transacoes": [
+      {
+        "id": 1,
+        "dataHora": "2025-06-13T02:20:10.1286215",
+        "valor": 10000.0,
+        "tipo": "deposito"
+      },
+      {
+        "id": 2,
+        "dataHora": "2025-06-13T02:20:15.792657",
+        "valor": 500.0,
+        "tipo": "saque"
+      }
+    ]
+  },
+  {
+    "cpfDono": "dale",
+    "saldo": 0.0,
+    "transacoes": []
+  }
+]

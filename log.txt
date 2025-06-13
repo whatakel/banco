@@ -1,0 +1,6 @@
+[13/06/2025 01:57:14]Gerente cadastrou novo cliente: tomate(tomate)
+[13/06/2025 01:58:06]Gerente cadastrou novo cliente: tomate(tomate)
+[13/06/2025 01:58:37]Gerente cadastrou novo cliente: massa(massa)
+[13/06/2025 02:03:39]Gerente cadastrou novo cliente: bbb(bbb)
+[13/06/2025 02:20:10]ze depositou R$10000,00
+[13/06/2025 02:48:05]dale depositou R$12030129,00

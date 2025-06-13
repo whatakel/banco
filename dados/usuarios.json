@@ -1,0 +1,67 @@
+[
+  {
+    "tipo": "Adm",
+    "nome": "Administrador",
+    "cpf": "00000000000",
+    "email": "adm",
+    "senha": "adm"
+  },
+  {
+    "tipo": "Gerente",
+    "nome": "kelvin",
+    "cpf": "kelvin",
+    "email": "kelvin",
+    "senha": "kelvin"
+  },
+  {
+    "tipo": "Cliente",
+    "conta": {
+      "cpfDono": "ze",
+      "saldo": 9500.0,
+      "transacoes": [
+        {
+          "id": 1,
+          "dataHora": "2025-06-13T02:20:10.1286215",
+          "valor": 10000.0,
+          "tipo": "deposito"
+        },
+        {
+          "id": 2,
+          "dataHora": "2025-06-13T02:20:15.792657",
+          "valor": 500.0,
+          "tipo": "saque"
+        }
+      ]
+    },
+    "nome": "ze",
+    "cpf": "ze",
+    "email": "ze",
+    "senha": "ze"
+  },
+  {
+    "tipo": "Gerente",
+    "nome": "tomate",
+    "cpf": "tomate",
+    "email": "tomate",
+    "senha": "tomate"
+  },
+  {
+    "tipo": "Gerente",
+    "nome": "hihi",
+    "cpf": "hihi",
+    "email": "hihi",
+    "senha": "hihi"
+  },
+  {
+    "tipo": "Cliente",
+    "conta": {
+      "cpfDono": "dale",
+      "saldo": 0.0,
+      "transacoes": []
+    },
+    "nome": "dale",
+    "cpf": "dale",
+    "email": "dale",
+    "senha": "dale"
+  }
+]
